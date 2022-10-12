@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "show.py", line 6, in <module>
+    data = pd.read_csv("./SingleQueueDynamics_out",header=None)
+  File "/home/yuki/anaconda3/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yuki/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yuki/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 488, in _read
+    return parser.read(nrows)
+  File "/home/yuki/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1047, in read
+    index, columns, col_dict = self._engine.read(nrows)
+  File "/home/yuki/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 224, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 801, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 857, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 843, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 1925, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 2 fields in line 524, saw 3
+
