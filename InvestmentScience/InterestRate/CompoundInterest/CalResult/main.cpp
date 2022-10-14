@@ -1,0 +1,14 @@
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+
+int main(int argc, char** argv){
+    //argv[1]: interest rate, argv[2]: period, argv[3]: initial condition
+    double r = stod(argv[1]);
+    double t = stod(argv[2]);
+    double init = stod(argv[3]);
+
+    cout << init* pow(1+r, t);
+}
